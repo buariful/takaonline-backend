@@ -5,7 +5,7 @@ const port = process.env.PORT || 5000;
 // middlewares
 const cors = require("cors");
 const { MongoClient, ServerApiVersion } = require("mongodb");
-require("dotenv").config({ path: "backend/config.env" });
+require("dotenv").config();
 
 app.use(cors());
 app.use(express.json());
